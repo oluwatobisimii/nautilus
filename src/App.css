@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+.cybersecurity{
+  background: linear-gradient(146.45deg, #F0CFF8 0.84%, #F0CFF8 0.84%, #F0FBFE 64.16%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cloud{
+  background: linear-gradient(226.16deg, #D4EBE7 -13.7%, #FCFDFC 71.83%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btmSheetCard {
+  background: #fbfbfb;
+  box-shadow: 0px 24px 19.1966px rgba(0, 0, 0, 0.09);
+  border-radius: 11.198px;
+  width: 90%;
+  left:50%;
+  transform: translateX(-50%)
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.tabColor {
+  width: 5px;
+  height: 49px;
+}
+
+.course-card{
+  box-shadow: 0px 9px 100px rgba(0, 0, 0, 0.09);
+border-radius: 6.94216px;
+width: 100%;
+}
+
+.horizontalLine{
+  background: grey;
+  opacity: 25%;
+  height: 2px;
+  width: 100%;
+}
+
+.horizontalLine2{
+  background: rgb(199, 199, 199);
+  opacity: 25%;
+  height: 1px;
+  width: 100%;
+}
+.verticalLine{
+  background: rgb(199, 199, 199);
+  opacity: 50%;
+  width: 1px;
+  height: 48px;
+}
+
+.navContainer{
+  display:flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: absolute;
+  right:16px;
+  z-index:10;
+  width: 70%;
+  top: 60px;
+  padding: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.testOutline{
+  outline:1px solid red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navActive{
+  display: none;
+}
+
+.circle1{
+  top: -30%;
+  left: 15%;
+}
+
+.circle2{
+  left: -10%;
+}
+
+
+.circle3{
+  bottom: -15%;
+  z-index: 9;
+}
+
+
+/* MD */
+
+@media (min-width: 768px) {
+
+
+  .sideNote{
+    width: 60%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .course-card{
+    width: 47%;
   }
+
+  .navActive{
+    display: flex;
+  }
+
+  .navContainer{
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    left: unset;
+    top: unset;
+    transform: unset;
+    width:unset;
+    z-index:10;
+    top:unset;
+    background: unset;
+    padding: 0;
+    right:unset;
+  }
+}
+
+
+/* LG */
+
+@media (min-width: 1024px){
+
+  /* .course-card{
+    width: 25%;
+  } */
+
+.btmSheetCard {
+    background: unset;
+    box-shadow: unset;
+    border-radius: unset;
+    
+    left:unset;
+    transform: unset
+  }
+
+  
+}
+
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
