@@ -10,13 +10,13 @@ function Hero() {
   }, []);
 
   return (
-    <div className="bg-[#150e3b] h-[80vh] relative overflow-hidden">
+    <div className="bg-[#150e3b] lg:h-[80vh] relative overflow-hidden">
       <div className="w-full h-full absolute z-0 overflow-hidden bg-green-100 mix-blend-overlay">
         <img src={heroBg} alt="" className="w-full "/>
       </div>
-      <div className="container mx-auto p-4 md:px-10 lg:px-20 flex h-full lg:py-0 relative z-10 justify-between">
-        <div className="w-[45%] space-y-8  font-cabinet self-center">
-          <p className="text-6xl 2xl:text-7xl 2xl:font-normal font-bold leading-16 text-white">
+      <div className="container mx-auto p-10 md:px-10 lg:px-20 flex h-full lg:py-0 relative z-10 justify-between">
+        <div className="lg:w-[45%] space-y-8  font-cabinet self-center">
+          <p className="text-6xl 2xl:text-7xl 2xl:font-normal font-light leading-16 text-white">
             Creating a reality from the future you can imagine
           </p>
           <p className="text-base font-bold leading-normal text-blue-100">
@@ -28,7 +28,7 @@ function Hero() {
         </div>
       </div>
         <div className="w-[65%] bg-red-200 absolute right-0 z-0 top-0 h-[80vh]">
-          <div className="absolute w-full h-full z-20 bg-gradient-to-r from-[#080421] to-[#00256000] "></div>
+          <div className="absolute w-full h-full z-20 bg-gradient-to-r from-[#080421] to-[#00256000] top-0 "></div>
           <video
             className="w-full h-full m-0 aspect-video object-cover"
             src={video}

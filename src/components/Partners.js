@@ -11,12 +11,12 @@ const Partners = () => {
   return (
     <Layout className="">
       <div className="flex flex-col items-center space-y-10">
-        <p className="text-5xl font-extrabold leading-10 text-center text-gray-900">
+        <p className="text-4xl lg:text-5xl font-extrabold leading-10 text-center text-gray-900">
           Technology Partners
         </p>
         <div className="w-20 h-0.5 border-2 border-blue-500" />
       </div>
-      <div className="flex justify-between items-center">
+      <div className="flex lg:justify-between items-center flex-wrap justify-center gap-x-10 ">
         <img src={p6} alt="" />
         <img src={p5} alt="" />
         <img src={p4} alt="" />

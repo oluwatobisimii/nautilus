@@ -8,9 +8,9 @@ import { MdChevronRight } from "react-icons/md";
 
 function CaseCard({name, image, bgColor}) {
   return (
-    <div className="flex flex-col w-[23%]">
-      <div className={`h-48 flex items-center justify-center bg-white`}>
-        <img src={image} alt=""  className="w-full h-full"/>
+    <div className="flex flex-col lg:w-[23%]">
+      <div className={`h-48 overflow-hidden flex items-center justify-center bg-white`}>
+        <img src={image} alt=""  className="w-full "/>
       </div>
       <div className="flex items-center p-4 w-full justify-between bg-[#ECF8FF]">
         <p className="font-medium">{name} {}</p>
@@ -22,9 +22,9 @@ function CaseCard({name, image, bgColor}) {
 
 function CaseStudies() {
   return (
-    <section className="bg-[#150E3B] font-cabinet selection:">
+    <section className="my-10 bg-[#150E3B] font-cabinet selection:">
       <div className="container mx-auto p-4 md:px-10 lg:px-20 lg:py-20">
-        <div className="flex justify-between">
+        <div className="mt-10 flex space-y-6 lg:space-y-0 md:flex-row flex-col justify-between">
           <p className="text-5xl font-medium leading-10 text-center text-white ">
             Case Studies
           </p>
@@ -36,7 +36,7 @@ function CaseStudies() {
         <div className="h-28">
 
         </div>
-        <div className="flex w-full justify-between">
+        <div className="flex w-full flex-col space-y-6 lg:space-y-0 md:flex-row justify-between">
           <CaseCard image={charis} name="Charis Oil" bgColor="[#041126]" />
           <CaseCard image={unilever} name="Unilever" bgColor="white" />
           <CaseCard image={antelope} name="Antelope" bgColor="white" />
