@@ -4,6 +4,7 @@ import video from "../assets/video.mp4";
 import heroBg from "../assets/heroBg.png";
 
 
+
 function Hero() {
   useEffect(() => {
     document.getElementById("video").play();
@@ -23,7 +24,7 @@ function Hero() {
             We help startups architect and build infrastructure to scale
           </p>
           <Button>
-            <p>Choose a cloud provider</p>
+            <a href="https://chp.nautilustech.xyz/" target="_blank" rel="noreferrer">Choose a cloud provider</a>
           </Button>
         </div>
       </div>

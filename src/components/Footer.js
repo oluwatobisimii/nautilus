@@ -9,21 +9,21 @@ const Footer = () => {
         <div className="flex flex-col-reverse lg:flex-row lg:justify-between gap-10 py-6">
           <div className="lg:space-y-6 flex lg:flex-col items-center justify-center">
             <img src={footerLogo} alt="" className="w-[40%] lg:w-full hidden lg:block" />
-            <p class="text-xs font-medium tracking-wider leading-tight text-white">
+            <p className="text-xs font-medium tracking-wider leading-tight text-white">
               All Rights Reserved. Nautilus Technologies 2022
             </p>
           </div>
-          <div class="flex flex-col text-center space-y-6 lg:w-[50%]">
+          <div className="flex flex-col text-center space-y-6 lg:w-[50%]">
             <div className="flex space-x-6">
-              <p class="text-sm text-white">Home</p>
-              <p class="text-sm text-white">About us</p>
-              <p class="text-sm text-white">Products</p>
-              <p class="text-sm text-white">Industries</p>
-              <p class="text-sm text-white">Partners</p>
+              <p className="text-sm text-white">Home</p>
+              <p className="text-sm text-white">About us</p>
+              <p className="text-sm text-white">Products</p>
+              <p className="text-sm text-white">Industries</p>
+              <p className="text-sm text-white">Partners</p>
             </div>
-            <hr class="bg-[#459ED7] border-[#459ED7] " />
+            <hr className="bg-[#459ED7] border-[#459ED7] " />
             <div className="flex justify-between flex-col lg:flex-row space-y-3 lg:space-y-0">
-              <div class="text-white text-2xl flex space-x-4 mx-auto lg:mx-0">
+              <div className="text-white text-2xl flex space-x-4 mx-auto lg:mx-0">
                 <RiTwitterFill />
                 <RiInstagramFill />
                 <RiLinkedinFill />

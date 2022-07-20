@@ -105,9 +105,10 @@ const moveLeft = function(){
 
       <div className="font-cabinet w-full overflow-x-scroll relative scroll-smooth no-scrollbar" id="outsider">
         <div className="flex gap-[36px] lg:gap-[2%] w-[600%] lg:w-[200%] overflow-x-auto" >
-          {cards.map((card) => {
+          {cards.map((card, index) => {
             return (
               <SpecializationCard
+              key={index}
                 title={card.title}
                 subtitle={card.subtitle}
                 image={card.image}

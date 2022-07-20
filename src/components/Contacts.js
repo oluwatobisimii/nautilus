@@ -4,7 +4,7 @@ import Layout from "./shared/Layout";
 const Contacts = () => {
   return (
     <Layout>
-      <div className="flex flex-col lg:flex-row justify-center">
+      <div className="flex flex-col lg:flex-row justify-center pt-10" id="contact">
         <div className="flex flex-col lg:w-[35%] space-y-6">
           <p className="text-base font-normal text-blue-500">
             We’ll like to know more
@@ -16,7 +16,7 @@ const Contacts = () => {
         <form className="shadow-2xl lg:w-[50%] flex flex-wrap p-6 lg:p-10 space-y-6 lg:space-y-10">
           <div className="flex flex-col w-full space-y-2">
             <label
-              for="full_name"
+              htmlFor="full_name"
               className="font-medium tracking-widest uppercase font-roboto text-sm"
             >
               Full name
@@ -31,7 +31,7 @@ const Contacts = () => {
           </div>
           <div className="flex flex-col w-full space-y-2">
             <label
-              for="email"
+              htmlFor="email"
               className="font-medium tracking-widest uppercase font-roboto text-sm"
             >
               EMAIL ADDRESS
@@ -46,7 +46,7 @@ const Contacts = () => {
           </div>
           <div className="flex flex-col w-full space-y-2">
             <label
-              for="full_name"
+              htmlFor="full_name"
               className="font-medium tracking-widest uppercase font-roboto text-sm"
             >
               Timeline
@@ -61,7 +61,7 @@ const Contacts = () => {
           </div>
           <div className="flex flex-col w-full space-y-2">
             <label
-              for="email"
+              htmlFor="email"
               className="font-medium tracking-widest uppercase font-roboto text-sm"
             >
               MORE INFORMATION
@@ -75,8 +75,8 @@ const Contacts = () => {
             />
           </div>
 
-          <button class="inline-flex items-center justify-center h-14 px-8 py-4 bg-[#459ED7]">
-            <p class="text-base font-bold text-white uppercase">Send request</p>
+          <button className="inline-flex items-center justify-center h-14 px-8 py-4 bg-[#459ED7]">
+            <p className="text-base font-bold text-white uppercase">Send request</p>
           </button>
         </form>
       </div>
