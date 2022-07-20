@@ -40,7 +40,7 @@ function NavLink(props) {
 
   const navClassName =
     location[1] === props.to.split("/")[1]
-      ? `  border-white lg:border-b-2 pb-3 lg:inline lg:border-[#009BFF] ${mainNavPropStyle}`
+      ? `  border-white lg:border-b-2 pb-3 lg:inline-block lg:border-[#009BFF] ${mainNavPropStyle}`
       : ` ${mainNavPropStyle}  border-white lg:border-none`;
 
 
@@ -66,14 +66,16 @@ const Navbar = () => {
   const [navToggle, setNavToggle] = useState(false);
 
   const clickHandler = () => {
-    navToggle ? setNavToggle(false) : setNavToggle(true)
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      navToggle ? setNavToggle(false) : setNavToggle(true)
+    }
   };
 
   // const { pathname } = useLocation();
   // const location = pathname.split("/");
 
 
-  const visbleNav = navToggle ? "navContainer text-white" : "hidden"
+  const visbleNav = navToggle ? "navContainer text-white" : "hidden lg:block"
 
   const navMenuContainer = `${visbleNav} lg:block  bg-[#009BFF] lg:bg-transparent flex lg:flex-row lg:space-x-8`
 

@@ -111,10 +111,12 @@ width: 100%;
     transform: unset;
     width:unset;
     z-index:10;
+    height:unset;
     top:unset;
     background: unset;
     padding: 0;
     right:unset;
+    gap:36px;
   }
 }
 
