@@ -3,6 +3,7 @@ import Layout from "../components/shared/Layout";
 
 const Products = () => {
   return (
+    
     <Layout>
       <div className="flex flex-col space-y-40">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-y-[32px]">

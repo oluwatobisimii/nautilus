@@ -26,8 +26,8 @@ const links = [
     to: "/products",
   },
   {
-    name: "Partners",
-    to: "/partners",
+    name: "Case Studies",
+    to: "/case-studies",
   },
 ]
 

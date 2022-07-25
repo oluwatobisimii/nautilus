@@ -28,7 +28,7 @@ function QuestionCard(){
 function FAQ() {
   return (
     <section className="container mx-auto p-4 md:px-10 lg:px-20 lg:py-36 font-cabinet flex justify-between lg:flex-row flex-col space-y-6 lg:space-y-0">
-      <div className="lg:w-[35%] bg-[#E9F6FF] p-8 space-y-8">
+      <div className="lg:w-[35%] bg-[#E9F6FF] p-8 space-y-8" data-aos-duration="500" data-aos="fade-up" data-aos-delay="200">
         <div className="flex items-center space-x-6">
           <p className="bg-white text-3xl p-4 rounded-full w-12 h-12 flex items-center justify-center font-bold">
             ?
@@ -43,7 +43,8 @@ function FAQ() {
         </p>
       </div>
 
-      <div className="lg:w-[60%] flex flex-col space-y-4">
+      <div className="lg:w-[60%] flex flex-col space-y-4" data-aos-duration="500" data-aos="fade-up"
+      data-aos-delay="300">
       <QuestionCard/>
       <QuestionCard/>
       <QuestionCard/>

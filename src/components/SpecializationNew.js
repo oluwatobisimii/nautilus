@@ -50,7 +50,7 @@ const cards = [
 
 function SpecializationCard({ title, subtitle, image }) {
   return (
-    <div className="w-[300px] lg:w-[30%]  flex flex-col border bg-[#F1F9FE] hover:border-[#009CF2] hover:shadow-xl shadow-[#a4dfff]">
+    <div className="w-[300px] lg:w-[30%]  flex flex-col border bg-[#F1F9FE] hover:border-[#009CF2] hover:shadow-xl shadow-[#a4dfff]" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
       <div className="bg-white">
         <img src={image} alt="" />
       </div>

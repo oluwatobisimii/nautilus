@@ -5,15 +5,20 @@ import unilever from "../assets/images/unilever.png";
 import antelope from "../assets/images/antelope.png";
 import integrated from "../assets/images/integrated.png";
 import { MdChevronRight } from "react-icons/md";
+import { Link } from "react-router-dom";
 
-function CaseCard({name, image, bgColor}) {
+function CaseCard({ name, image, bgColor }) {
   return (
     <div className="flex flex-col lg:w-[23%]">
-      <div className={`h-48 overflow-hidden flex items-center justify-center bg-white`}>
-        <img src={image} alt=""  className="w-full "/>
+      <div
+        className={`h-48 overflow-hidden flex items-center justify-center bg-white`}
+      >
+        <img src={image} alt="" className="w-full " />
       </div>
       <div className="flex items-center p-4 w-full justify-between bg-[#ECF8FF]">
-        <p className="font-medium">{name} {}</p>
+        <p className="font-medium">
+          {name} {}
+        </p>
         <MdChevronRight />
       </div>
     </div>
@@ -28,14 +33,14 @@ function CaseStudies() {
           <p className="text-5xl font-medium leading-10 text-center text-white ">
             Case Studies
           </p>
-          <Button>
-            <p>View all Projects</p>
-          </Button>
+          <Link to="/case-studies">
+            <Button>
+              <p>View all Projects</p>
+            </Button>
+          </Link>
         </div>
 
-        <div className="h-28">
-
-        </div>
+        <div className="h-28"></div>
         <div className="flex w-full flex-col space-y-6 lg:space-y-0 md:flex-row justify-between">
           <CaseCard image={charis} name="Charis Oil" bgColor="[#041126]" />
           <CaseCard image={unilever} name="Unilever" bgColor="white" />
