@@ -22,16 +22,16 @@ const links = [
     to: "/about",
   },
   {
+    name: "Services",
+    to: "/services",
+  },
+  {
     name: "Products",
     to: "/products",
   },
   {
     name: "Case Studies",
     to: "/case-studies",
-  },
-  {
-    name: "Services",
-    to: "/services",
   },
 ]
 
