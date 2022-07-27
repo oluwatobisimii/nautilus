@@ -12,6 +12,7 @@ import CaseStudies from './views/CaseStudies';
 import Products from './views/Products';
 import Footer from './components/Footer';
 import About from './views/About';
+import Services from './views/Services';
 
 function App() {
   React.useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
         <Route exact path="/case-studies" element={<CaseStudies />} />
         <Route exact path="/products" element={<Products />} />
         <Route exact path="/about" element={<About />} />
+        <Route exact path="/services" element={<Services />} />
 
       </Routes>
       <Footer />

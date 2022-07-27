@@ -29,6 +29,10 @@ const links = [
     name: "Case Studies",
     to: "/case-studies",
   },
+  {
+    name: "Services",
+    to: "/services",
+  },
 ]
 
 function NavLink(props) {
@@ -75,7 +79,7 @@ const Navbar = () => {
   // const location = pathname.split("/");
 
 
-  const visbleNav = navToggle ? "navContainer text-white" : "hidden lg:block"
+  const visbleNav = navToggle ? "navContainer text-white font-bold text-2xl" : "hidden lg:block"
 
   const navMenuContainer = `${visbleNav} lg:block  bg-[#009BFF] lg:bg-transparent flex lg:flex-row lg:space-x-8`
 

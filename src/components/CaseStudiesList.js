@@ -3,12 +3,11 @@ import Layout from "./shared/Layout";
 import { MdChevronRight } from "react-icons/md";
 import { HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
-import emptyImage from "../assets/images/empty.png";
 
 import { data } from "../assets/data.js";
 
 function OverlayCard({ setOverlay, index }) {
-  const [tab, setTab] = useState("clientGoal");
+  const [tab, setTab] = useState("background");
 
   return (
     <motion.div
@@ -33,55 +32,111 @@ function OverlayCard({ setOverlay, index }) {
             <div
               className="flex space-x-6 cursor-pointer group"
               onClick={() => {
-                setTab("clientGoal");
+                setTab("background");
               }}
             >
-              {tab === "clientGoal" ? (
+              {tab === "background" ? (
                 <div className="w-2 bg-black"></div>
               ) : (
                 <div className="w-2 bg-transparent group-hover:bg-[#a1d6ff]"></div>
               )}
 
-              {tab === "clientGoal" ? (
-                <p className="text-base font-bold">Client Goal</p>
+              {tab === "background" ? (
+                <p className="text-base font-bold">Background</p>
               ) : (
                 <p className="text-base text-gray-600 group-hover:font-medium">
-                  Client Goal
+                  Background
                 </p>
               )}
             </div>
             <hr />
-            <div className="flex space-x-6 cursor-pointer group" onClick={() =>{setTab("solutionImplemented")}}>
-              {tab === "solutionImplemented" ? (
+            <div
+              className="flex space-x-6 cursor-pointer group"
+              onClick={() => {
+                setTab("challenges");
+              }}
+            >
+              {tab === "challenges" ? (
                 <div className="w-2 bg-black"></div>
               ) : (
                 <div className="w-2 bg-transparent group-hover:bg-[#a1d6ff]"></div>
               )}
 
-              {tab === "solutionImplemented" ? (
-                <p className="text-base font-bold">Solution Implemented</p>
+              {tab === "challenges" ? (
+                <p className="text-base font-bold">Business Challenges</p>
               ) : (
                 <p className="text-base text-gray-600 group-hover:font-medium">
-                  Solution Implemented
+                  Business Challenges
                 </p>
               )}
             </div>
             <hr />
-            <p className="text-base text-gray-600 font-bold pt-6">Project Timeline - {data[index].timeline}</p>
-            
-            
+            <div
+              className="flex space-x-6 cursor-pointer group"
+              onClick={() => {
+                setTab("ourApproach");
+              }}
+            >
+              {tab === "ourApproach" ? (
+                <div className="w-2 bg-black"></div>
+              ) : (
+                <div className="w-2 bg-transparent group-hover:bg-[#a1d6ff]"></div>
+              )}
+
+              {tab === "ourApproach" ? (
+                <p className="text-base font-bold">Our Approach</p>
+              ) : (
+                <p className="text-base text-gray-600 group-hover:font-medium">
+                  Our Approach
+                </p>
+              )}
+            </div>
+            <hr />
+            <div
+              className="flex space-x-6 cursor-pointer group"
+              onClick={() => {
+                setTab("customerOutcome");
+              }}
+            >
+              {tab === "customerOutcome" ? (
+                <div className="w-2 bg-black"></div>
+              ) : (
+                <div className="w-2 bg-transparent group-hover:bg-[#a1d6ff]"></div>
+              )}
+
+              {tab === "customerOutcome" ? (
+                <p className="text-base font-bold">Customer Outcome</p>
+              ) : (
+                <p className="text-base text-gray-600 group-hover:font-medium">
+                  Customer Outcome
+                </p>
+              )}
+            </div>
           </div>
         </div>
-        <div className="bg-white lg:p-10 p-4 lg:w-[65%] ">
-          {tab === "clientGoal" && (
-            <p className=" font-medium leading-[150%] text-gray-900 whitespace-pre-line lg:h-full lg:overflow-y-scroll no-scrollbar">
-              {data[index].clientGoal}
+        <div className="bg-white lg:p-16 p-4 lg:w-[65%] ">
+          {tab === "background" && (
+            <div>
+              <p className=" font-medium lg:text-xl leading-[180%] text-gray-900 whitespace-pre-line lg:h-full lg:overflow-y-scroll no-scrollbar">
+                {data[index].background}
+              </p>
+            </div>
+          )}
+
+          {tab === "challenges" && (
+            <p className=" font-medium lg:text-xl leading-[180%] text-gray-900 whitespace-pre-line lg:h-full overflow-y-scroll ">
+              {data[index].challenges}
             </p>
           )}
 
-          {tab === "solutionImplemented" && (
-            <p className=" font-medium leading-[150%] text-gray-900 whitespace-pre-line lg:h-full overflow-y-scroll ">
-              {data[index].solutionImplemented}
+          {tab === "ourApproach" && (
+            <p className=" font-medium lg:text-xl leading-[180%] text-gray-900 whitespace-pre-line lg:h-full overflow-y-scroll ">
+              {data[index].ourApproach}
+            </p>
+          )}
+          {tab === "customerOutcome" && (
+            <p className=" font-medium lg:text-xl leading-[180%] text-gray-900 whitespace-pre-line lg:h-full overflow-y-scroll ">
+              {data[index].customerOutcome}
             </p>
           )}
         </div>
@@ -106,7 +161,7 @@ function CaseCard({ name, image, bgColor, setOverlay, index, setIndex }) {
       <div
         className={`h-48 overflow-hidden flex items-center justify-center bg-white`}
       >
-        <img src={emptyImage} alt="" className="w-full" />
+        <img src={image} alt="" className="w-full" />
       </div>
       <div className="flex items-center p-4 w-full justify-between bg-[#ECF8FF]">
         <p className="font-medium">
@@ -196,6 +251,17 @@ const CaseStudiesList = () => {
               <div className="w-full h-0.5 border border-blue-500" />
             )}
           </div>
+          <div
+            className="inline-flex flex-col space-y-1 items-start cursor-pointer"
+            onClick={() => setActiveTab("manufacturing")}
+          >
+            <p className="text-base font-bold text-gray-900 uppercase">
+              manufacturing
+            </p>
+            {activeTab === "manufacturing" && (
+              <div className="w-full h-0.5 border border-blue-500" />
+            )}
+          </div>
         </div>
 
         <motion.div
@@ -210,6 +276,7 @@ const CaseStudiesList = () => {
                 setOverlay={setOverlay}
                 setIndex={setCaseIndex}
                 index={index}
+                image={item.image}
               />
             );
           })}
