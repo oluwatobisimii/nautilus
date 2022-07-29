@@ -1,6 +1,7 @@
 import React, {useState} from "react";
+import {faq} from "../assets/FAQ"
 
-function QuestionCard(){
+function QuestionCard({question, answer}){
 
   const [toggle, setToggle] = useState(false)
 
@@ -8,7 +9,7 @@ function QuestionCard(){
     <div className="w-full flex flex-col">
         <div className="bg-blue-50 rounded-tl rounded-tr flex items-center px-4 py-2 justify-between cursor-pointer hover:bg-[#d2eeff] " onClick={()=>{setToggle(!toggle)}}>
           <p className="text-sm font-medium text-gray-900">
-            What consulting services do you offer?
+           {question}
           </p>
           <p className="text-3xl font-light text-center text-gray-500 "  >{toggle ? "-":"+"}</p>
         </div>
@@ -16,9 +17,7 @@ function QuestionCard(){
 
 <div className="w-1 bg-white bg-opacity-50 rounded-bl rounded-br" />
 <p className="text-sm font-medium leading-tight text-white w-[80%]">
-  We offer consulting services in core areas of expertise including
-  general security architecture, identity management, cloud security and
-  software development.
+  {answer}
 </p>
 </div>}
       </div>
@@ -45,12 +44,14 @@ function FAQ() {
 
       <div className="lg:w-[60%] flex flex-col space-y-4" data-aos-duration="500" data-aos="fade-up"
       data-aos-delay="300">
-      <QuestionCard/>
-      <QuestionCard/>
-      <QuestionCard/>
-      <QuestionCard/>
-      <QuestionCard/>
-      <QuestionCard/>
+        {faq.map((faq,index)=>{
+          return <QuestionCard
+          question={faq.question}
+          answer={faq.answer}
+          key={index}
+          />
+        })}
+  
       </div>
 
       

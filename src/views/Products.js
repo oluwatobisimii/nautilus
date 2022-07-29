@@ -1,5 +1,10 @@
 import React from "react";
 import Layout from "../components/shared/Layout";
+import chp from "../assets/images/chp.png"
+import chamberr from "../assets/images/chamberr.png"
+import blockops from "../assets/images/blockops.png"
+import Button from "../components/shared/Button";
+
 
 const Products = () => {
   return (
@@ -21,11 +26,15 @@ const Products = () => {
               <br />
             </p>
           </div>
-          <div className="bg-[#DEF3FF] w-full lg:w-[40%] min-h-[400px]"></div>
+          <div className="w-full lg:w-[40%] min-h-[400px]">
+            <img src={chp} alt="" />
+          </div>
         </div>
         <div className="flex flex-col-reverse gap-y-[32px] lg:flex-row justify-between items-center">
           
-          <div className="bg-[#DEF3FF] w-full lg:w-[40%] min-h-[400px]"></div>
+          <div className="w-full lg:w-[40%] min-h-[400px]">
+            <img src={chamberr} alt="" />
+          </div>
           <div className="lg:w-[50%] space-y-6">
             <p className="text-5xl font-extrabold leading-[105%] text-gray-900">
             Chamberr
@@ -44,10 +53,14 @@ const Products = () => {
             </p>
             <p className="text-lg font-medium leading-loose text-gray-500">
             BlockOps helps fast-growing companies build their blockchain infrastructure in a scalable and cost-effective way in seconds. This tool makes it easier for anyone to launch and manage blockchain nodes. This means that more startups will be able to get up-and-running with the technology, improving innovation, efficiency, and trust.
-              <br />
             </p>
+            <Button>
+            <a href="https://www.blockops.sh/" target="_blank" rel="noreferrer">View product</a>
+          </Button>
           </div>
-          <div className="bg-[#DEF3FF] w-full lg:w-[40%] min-h-[400px]"></div>
+          <div className=" w-full lg:w-[40%] min-h-[400px]">
+            <img src={blockops} alt="" />
+          </div>
         </div>
       </div>
     </Layout>
