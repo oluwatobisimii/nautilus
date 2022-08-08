@@ -111,6 +111,9 @@ const Navbar = () => {
               clickHandler={clickHandler}
             />
           })}
+          <li className="block border-b pb-3 lg:border-none lg:inline-block font-medium">
+            <a href='https://medium.com/@Nautilus_Technologies' target="_blank" className="lg:text-black border-white lg:border-none" >Blog</a>
+          </li>
           <a className="inline-flex items-center justify-center px-7 py-2.5 bg-blue-500 rounded-md" href="#contact">
             <p className="text-white font-medium">Contact</p>
           </a>
