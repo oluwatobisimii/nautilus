@@ -4,12 +4,12 @@ import Layout from "./shared/Layout";
 const Contacts = () => {
   return (
     <Layout>
-      <div className="flex flex-col lg:flex-row justify-center pt-10" id="contact">
-        <div className="flex flex-col lg:w-[35%] space-y-6">
-          <p className="text-base font-normal text-blue-500">
+      <div className="flex flex-col lg:flex-row justify-center gap-10 pt-10" id="contact">
+        <div className="flex flex-col lg:w-[35%] space-y-6 md:text-center lg:text-left">
+          <p className="text-base font-normal text-blue-500 " >
             We’ll like to know more
           </p>
-          <p className="w-72 text-5xl font-semibold">
+          <p className=" text-5xl font-semibold">
             Tell us about your project
           </p>
         </div>

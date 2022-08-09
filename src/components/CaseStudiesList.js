@@ -14,7 +14,7 @@ function OverlayCard({ setOverlay, index }) {
       initial={{ opacity: 0 }}
       exit={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="bg-[#F1FAFF] fixed top-0 left-0 overflow-y-scroll no-scrollbar h-screen w-screen lg:top-1/2 lg:h-[82vh] lg:-translate-y-1/2 z-10 lg:left-1/2 lg:-translate-x-1/2 lg:w-[80%] 2xl:w-[70%] p-6 lg:py-12 lg:px-16 lg:pt-0 2xl:p-20 flex flex-col space-y-6 lg:space-y-10 shadow-2xl shadow-[#b6beff02]"
+      className="bg-[#F1FAFF] fixed top-0 left-0 overflow-y-scroll no-scrollbar h-screen w-screen lg:top-1/2 lg:h-[82vh] lg:-translate-y-1/2 z-60 lg:left-1/2 lg:-translate-x-1/2 lg:w-[80%] 2xl:w-[70%] p-6 lg:py-12 lg:px-16 lg:pt-0 2xl:p-20 flex flex-col space-y-6 lg:space-y-10 shadow-2xl shadow-[#b6beff02]"
     >
       <div
         class="block fixed top-0 right-0 p-4 bg-[#57a0ea] text-2xl text-white rounded-full self-end m-4 "
@@ -152,7 +152,7 @@ function CaseCard({ name, image, bgColor, setOverlay, index, setIndex }) {
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
       exit={{ opacity: 0 }}
-      className="flex flex-col lg:w-[250px]"
+      className="flex flex-col md:w-[48%] lg:w-[250px]"
       onClick={() => {
         setOverlay(true);
         setIndex(index);
@@ -266,7 +266,7 @@ const CaseStudiesList = () => {
 
         <motion.div
           layout
-          className="mt-10 flex flex-wrap lg:flex-row flex-col gap-[24px]"
+          className="mt-10 flex flex-wrap md:flex-row flex-col gap-[24px]"
         >
           {filtered.map((item, index) => {
             return (

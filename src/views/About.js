@@ -9,8 +9,8 @@ function MissionCard() {
 
   const [overlay, setOverlay] = React.useState(false)
   return (
-    <motion.div className=" w-full md:w-[40%] lg:w-[30%] border border-gray-200 bg-white hover:border-none hover:shadow-2xl hover:shadow-[#40a7f03b] group p-6 space-y-6 relative overflow-hidden">
-      <div className="flex justify-between space-x-10">
+    <motion.div className=" w-full md:w-[48%] lg:w-[30%] border border-gray-200 bg-white hover:border-none hover:shadow-2xl hover:shadow-[#40a7f03b] group p-6 space-y-6 relative overflow-hidden">
+      <div className="flex justify-between space-x-10" onClick={()=>{setOverlay(true)}}>
         <div className="flex space-x-3 rounded-full items-center px-2 py-1 bg-[#F8F8F8] group-hover:bg-[#F1F9FE] group-hover:text-[#40A6F0]">
           <MdBolt />
           <p className="font-medium">How we do it</p>
@@ -57,8 +57,8 @@ function VisionCard() {
 
   const [overlay, setOverlay] = React.useState(false)
   return (
-    <motion.div className=" w-full md:w-[40%] lg:w-[30%] border border-gray-200 bg-white hover:border-none hover:shadow-2xl hover:shadow-[#40a7f03b] group p-6 space-y-6 relative overflow-hidden">
-      <div className="flex justify-between space-x-10">
+    <motion.div className=" w-full md:w-[48%] lg:w-[30%] border border-gray-200 bg-white hover:border-none hover:shadow-2xl hover:shadow-[#40a7f03b] group p-6 space-y-6 relative overflow-hidden">
+      <div className="flex justify-between space-x-10" onClick={()=>{setOverlay(true)}}>
         <div className="flex space-x-3 rounded-full items-center px-2 py-1 bg-[#F8F8F8] group-hover:bg-[#F1F9FE] group-hover:text-[#40A6F0]">
           <MdBolt />
           <p className="font-medium">Why we do it</p>
@@ -68,7 +68,7 @@ function VisionCard() {
               bg-[#F8F8F8] group-hover:bg-[#40A6F0]
               group-hover:text-white hover:cursor-pointer
               "
-         onClick={()=>{setOverlay(true)}}/>
+         />
       </div>
       <p className="text-5xl font-extrabold ">
         Our Vision <br />
@@ -101,8 +101,8 @@ function CoreValues() {
 
   const [overlay, setOverlay] = React.useState(false)
   return (
-    <motion.div className=" w-full md:w-[40%] lg:w-[30%] border border-gray-200 bg-white hover:border-none hover:shadow-2xl hover:shadow-[#40a7f03b] group p-6 space-y-6 relative overflow-hidden">
-      <div className="flex justify-between space-x-10">
+    <motion.div className=" w-full md:w-[48%] lg:w-[30%] border border-gray-200 bg-white hover:border-none hover:shadow-2xl hover:shadow-[#40a7f03b] group p-6 space-y-6 relative overflow-hidden">
+      <div className="flex justify-between space-x-10" onClick={()=>{setOverlay(true)}}>
         <div className="flex space-x-3 rounded-full items-center px-2 py-1 bg-[#F8F8F8] group-hover:bg-[#F1F9FE] group-hover:text-[#40A6F0]">
           <MdBolt />
           <p className="font-medium">Who we are</p>
@@ -175,7 +175,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-[48px] ">
+        <div className="flex flex-col flex-wrap md:flex-row md:gap-[24px] lg:gap-[48px]  ">
           <VisionCard/>
           <MissionCard/>
           <CoreValues/>

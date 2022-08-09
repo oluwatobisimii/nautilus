@@ -70,7 +70,7 @@ const Navbar = () => {
   const [navToggle, setNavToggle] = useState(false);
 
   const clickHandler = () => {
-    if (window.matchMedia("(max-width: 768px)").matches) {
+    if (window.matchMedia("(max-width: 1024px)").matches) {
       navToggle ? setNavToggle(false) : setNavToggle(true)
     }
   };
@@ -92,7 +92,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-
         {navToggle ? <HiX style={{
           fontSize: "24px"
         }} className="lg:hidden"
@@ -112,7 +111,7 @@ const Navbar = () => {
             />
           })}
           <li className="block border-b pb-3 lg:border-none lg:inline-block font-medium">
-            <a href='https://medium.com/@Nautilus_Technologies' target="_blank" className="lg:text-black border-white lg:border-none" >Blog</a>
+            <a href='https://medium.com/@Nautilus_Technologies' rel="noreferrer" target="_blank" className="lg:text-black border-white lg:border-none" >Blog</a>
           </li>
           <a className="inline-flex items-center justify-center px-7 py-2.5 bg-blue-500 rounded-md" href="#contact">
             <p className="text-white font-medium">Contact</p>

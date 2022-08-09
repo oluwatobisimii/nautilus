@@ -6,7 +6,7 @@ import { RiTwitterFill, RiMediumFill, RiLinkedinFill } from "react-icons/ri";
 const Footer = () => {
   return (
     <section className="mt-10 bg-[#150E3B] font-cabinet selection:">
-      <div className="container mx-auto p-4 md:px-10 lg:px-20 lg:py-20">
+      <div className="container mx-auto p-4 md:px-10 md:py-10 lg:px-20 lg:py-20">
         <div className="flex flex-col-reverse lg:flex-row lg:justify-between gap-10 py-6">
           <div className="lg:space-y-6 flex lg:flex-col items-center justify-center">
             <img
@@ -19,7 +19,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex flex-col text-center space-y-6 lg:w-[50%]">
-            <div className="flex space-x-6">
+            <div className="flex justify-center  space-x-6">
               <Link to="/">
                 <p className="text-sm text-white">Home</p>
               </Link>
@@ -37,8 +37,8 @@ const Footer = () => {
               </Link>
             </div>
             <hr className="bg-[#459ED7] border-[#459ED7] " />
-            <div className="flex justify-between flex-col lg:flex-row space-y-3 lg:space-y-0">
-              <div className="text-white text-2xl flex space-x-4 mx-auto lg:mx-0">
+            <div className="flex justify-between flex-col md:flex-row space-y-3 md:space-y-0">
+              <div className="text-white text-2xl flex space-x-4 mx-auto  md:mx-0">
                 <a
                   href="https://twitter.com/nautilustechq"
                   rel="noreferrer"
@@ -61,7 +61,7 @@ const Footer = () => {
                   <RiLinkedinFill />
                 </a>
               </div>
-              <p className=" lg:w-48 text-base font-medium leading-tight text-white">
+              <p className=" md:w-48 text-base font-medium leading-tight text-white">
                 912 Furlong Dr Grand Prairie TX 75036, USA
               </p>
               <div>
