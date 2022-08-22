@@ -5,12 +5,7 @@ import cyberSecurity from "../assets/images/cyberSecurity.svg";
 import training from "../assets/images/training.svg";
 
 export const cards = [
-    {
-      title: "Cloud Migration",
-      subtitle:
-        "Cloud Infrastructure Strategy and Design, Hybrid Cloud Setup, Data Migration, Cost Efficiency & Optimization",
-      image: cloud,
-    },
+    
     {
       title: "DevOps",
       subtitle:
@@ -18,16 +13,22 @@ export const cards = [
       image: devops,
     },
     {
-      title: "Cyber Security Consultancy",
+      title: "Cloud Migration",
       subtitle:
-        "Cybersecurity Frameworks Compliance Setup, DevSecOps, Application and Cloud Security, Implementing Security Best Practices",
-      image: cyberSecurity,
+        "Cloud Infrastructure Strategy and Design, Hybrid Cloud Setup, Data Migration, Cost Efficiency & Optimization",
+      image: cloud,
     },
     {
       title: "SRE and Infrastructure as a service",
       subtitle:
         "Setting up Infrastructure to achieve a 99.99% SLA across all verticals, Automating repetitive processes to reduce",
       image: SRE,
+    },
+    {
+      title: "Cyber Security Consultancy",
+      subtitle:
+        "Cybersecurity Frameworks Compliance Setup, DevSecOps, Application and Cloud Security, Implementing Security Best Practices",
+      image: cyberSecurity,
     },
     {
       title: "Training and Support",
