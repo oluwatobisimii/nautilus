@@ -65,12 +65,18 @@ const Footer = () => {
                 912 Furlong Dr Grand Prairie TX 75036, USA
               </p>
               <div>
-                <p className="text-sm font-medium leading-none text-white">
+                <a
+                  href="tel:+2348168087807"
+                  className="text-sm font-medium leading-none text-white block"
+                >
                   +234 816 8087 807
-                </p>
-                <p className="text-base font-medium tracking-wide leading-tight text-white">
-                  shell@nautilus.tech
-                </p>
+                </a>
+                <a
+                  href="mailto:hello@nautilus.tech"
+                  className="text-base font-medium tracking-wide leading-tight text-white"
+                >
+                  hello@nautilus.tech
+                </a>
               </div>
             </div>
           </div>
