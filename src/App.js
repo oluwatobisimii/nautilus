@@ -13,6 +13,7 @@ import Products from './views/Products';
 import Footer from './components/Footer';
 import About from './views/About';
 import Services from './views/Services';
+import Aws from './components/microsite/Aws';
 
 function App() {
   React.useEffect(() => {
@@ -28,6 +29,7 @@ function App() {
         <Route exact path="/products" element={<Products />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/services" element={<Services />} />
+        <Route exact path="/aws" element={<Aws />} />
 
       </Routes>
       <Footer />
