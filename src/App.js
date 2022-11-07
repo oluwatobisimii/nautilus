@@ -29,7 +29,7 @@ function App() {
         <Route exact path="/products" element={<Products />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/services" element={<Services />} />
-        <Route exact path="/aws" element={<Aws />} />
+        <Route exact path="/aws-microsite" element={<Aws />} />
 
       </Routes>
       <Footer />

@@ -33,6 +33,10 @@ const links = [
     name: "Case Studies",
     to: "/case-studies",
   },
+  {
+    name: "AWS Microsite",
+    to: "/aws-microsite",
+  },
 ]
 
 function NavLink(props) {

@@ -14,7 +14,7 @@ function SpecializationCard({ title, subtitle, image }) {
         <div className="bg-white">
           <img src={image} alt="" />
         </div>
-        <div className="flex flex-col space-y-3 items-start justify-start p-4 lg:p-9 w-full">
+        <div className="flex flex-col space-y-3 items-start items-stretch  justify-start p-4 lg:p-9 w-full">
           <p className="text-2xl font-bold leading-7">{title}</p>
           <p className="w-full text-base font-medium leading-normal text-gray-500">
             {subtitle}
