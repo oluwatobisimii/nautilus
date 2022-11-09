@@ -34,8 +34,8 @@ const links = [
     to: "/case-studies",
   },
   {
-    name: "AWS Microsite",
-    to: "/aws-microsite",
+    name: "AWS",
+    to: "/amazon-web-services",
   },
 ]
 
@@ -82,7 +82,7 @@ const Navbar = () => {
   // const { pathname } = useLocation();
   // const location = pathname.split("/");
 
-
+  
   const visbleNav = navToggle ? "navContainer text-white font-bold text-2xl" : "hidden lg:block"
 
   const navMenuContainer = `${visbleNav} lg:block  bg-[#009BFF] lg:bg-transparent flex lg:flex-row lg:space-x-8`
