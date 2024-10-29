@@ -69,7 +69,7 @@ const Footer = () => {
                   href="tel:+2348168087807"
                   className="text-sm font-medium leading-none text-white block"
                 >
-                  +234 816 8087 807
+                  +234 902 8772 777
                 </a>
                 <a
                   href="mailto:hello@nautilus.tech"

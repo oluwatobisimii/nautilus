@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import MagicSliderDots from "react-magic-slider-dots";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "react-magic-slider-dots/dist/magic-dots.css";
 
-import ApiService from "../../assets/images/api.png";
+// import ApiService from "../../assets/images/api.png";
 
 export const testimonials = [
   {
@@ -65,7 +65,7 @@ function Testimonial() {
             return(
               <div key={query.id}>
               <div className="flex flex-col self-strech">
-                <p className="font-normal md:text-base text-xs md:text-sm">
+                <p className="font-normal text-xs md:text-sm">
                   {query.testimonial}
                 </p>
                 <div className="flex gap-2 mt-8 ">

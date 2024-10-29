@@ -195,7 +195,7 @@ const About = () => {
                 About Nautilus
               </p>
               <p className="text-lg font-medium leading-loose text-gray-500">
-                Nautilus Technologies is a DevOps and Cloud Consulting company
+                Nautilus Technologies is a DevOps and Cloud Solutions company
                 that helps startups architect, build and maintain their Cloud
                 Infrastructure at Scale. We provide startups with all they need
                 to deliver and their products to their users in the most highly
